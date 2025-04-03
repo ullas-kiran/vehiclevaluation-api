@@ -1,18 +1,46 @@
-# Ignore compiled output
-dist/
-
-# Ignore dependencies
+# Node.js dependencies
 node_modules/
+npm-debug.log*
+yarn-error.log
 
-# Ignore environment files
+# Environment variables
 .env
+.env.local
+.env.development
+.env.production
+.env.test
 
-# Ignore logs
-logs/
+# Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.log/
 
-# Ignore TypeScript build artifacts
-*.tsbuildinfo
+# Build output
+dist/
+build/
+.tmp/
+.out/
+.next/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Coverage files
+coverage/
+.nyc_output/
