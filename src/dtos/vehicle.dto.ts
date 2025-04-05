@@ -3,7 +3,7 @@ import { IsString, IsNumber, Min, IsNotEmpty } from 'class-validator';
 export class CreateVehicleDto {
   @IsString()
   @IsNotEmpty()
-  vin!: string; // ! asserts this will be assigned at runtime
+  vin!: string; 
 
   @IsString()
   @IsNotEmpty()
