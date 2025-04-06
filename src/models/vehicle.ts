@@ -1,9 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+const { Entity, PrimaryGeneratedColumn, Column } = require("typeorm");
 
 @Entity()
 export class Vehicle {
   @PrimaryGeneratedColumn()
-  id!: number; // ! asserts this will be assigned by TypeORM
+  id!: number; 
 
   @Column()
   vin!: string;
@@ -21,5 +21,5 @@ export class Vehicle {
   mileage!: number;
 
   @Column({ nullable: true })
-  valuation?: number; // Optional, no ! needed
+  valuation?: number; 
 }

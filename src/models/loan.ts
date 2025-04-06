@@ -1,9 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+const { Entity, PrimaryGeneratedColumn, Column } = require("typeorm");
+
 
 @Entity()
 export class Loan {
   @PrimaryGeneratedColumn()
-  id!: number; // ! tells TypeScript this will be assigned by TypeORM
+  id!: number; 
 
   @Column()
   vehicleId!: number;
@@ -18,5 +19,5 @@ export class Loan {
   loanAmount!: number;
 
   @Column({ default: 'pending' })
-  status!: string; // 'pending', 'approved', 'rejected'
+  status!: string; 
 }
