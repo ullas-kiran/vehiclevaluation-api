@@ -23,6 +23,6 @@ export class CreateVehicleDto {
 }
 
 export class ValuationResponseDto {
-  vin!: string; // ! added here too, assuming it’s populated at runtime
+  vin!: string; 
   estimatedValue!: number;
 }

@@ -2,7 +2,7 @@ import { IsString, IsNumber, Min, IsNotEmpty } from 'class-validator';
 
 export class CreateLoanDto {
   @IsNumber()
-  vehicleId!: number; // ! asserts this will be assigned at runtime
+  vehicleId!: number; 
 
   @IsString()
   @IsNotEmpty()

@@ -24,7 +24,6 @@ export class LoanService {
   }
 
   private checkEligibility(dto: CreateLoanDto): boolean {
-    // Basic eligibility: income > 2x loan amount
     return dto.applicantIncome > dto.loanAmount * 2;
   }
 }
