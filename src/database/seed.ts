@@ -11,6 +11,7 @@ async function seed() {
     model: 'Accord',
     year: 2003,
     mileage: 120000,
+    valuation: 8500,
   });
 
   await vehicleRepository.save(vehicle);
